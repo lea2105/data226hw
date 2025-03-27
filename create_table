@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS user_db_marmot.dev.user_session_channel (
+    userId int not NULL,
+    sessionId varchar(32) primary key,
+    channel varchar(32) default 'direct'  
+);
+
+CREATE TABLE IF NOT EXISTS user_db_marmot.dev.session_timestamp (
+    sessionId varchar(32) pri mary key,
+    ts timestamp  
+);
