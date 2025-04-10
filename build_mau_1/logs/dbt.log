@@ -1,0 +1,60 @@
+[0m05:14:50.406551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071ba090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094afc20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094ac2f0>]}
+
+
+============================== 05:14:50.410467 | d3255ce4-0699-4100-8907-d10beecc17c5 ==============================
+[0m05:14:50.410467 [info ] [MainThread]: Running with dbt=1.9.4
+[0m05:14:50.410966 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/leali/sjsu-data226-SP25/week10/build_mau_1/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/leali/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:14:51.526358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3255ce4-0699-4100-8907-d10beecc17c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123389f70>]}
+[0m05:14:51.567230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3255ce4-0699-4100-8907-d10beecc17c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094eb950>]}
+[0m05:14:51.568038 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m05:14:51.669800 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m05:14:51.670565 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:14:51.670883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd3255ce4-0699-4100-8907-d10beecc17c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123468620>]}
+[0m05:14:52.456652 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.build_mau_1.user_session_channel' (models/input/user_session_channel.sql) depends on a source named 'dev.user_session_channel' which was not found
+[0m05:14:52.459340 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.106355, "process_in_blocks": "0", "process_kernel_time": 0.966558, "process_mem_max_rss": "199196672", "process_out_blocks": "0", "process_user_time": 3.82553}
+[0m05:14:52.459859 [debug] [MainThread]: Command `dbt run` failed at 05:14:52.459775 after 2.11 seconds
+[0m05:14:52.460169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x142f6e690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1429f9670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117133bc0>]}
+[0m05:14:52.460458 [debug] [MainThread]: Flushing usage events
+[0m05:14:52.843010 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:19:51.810221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1145f01a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11505b2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1129ec0b0>]}
+
+
+============================== 05:19:51.814366 | ceb3d719-215b-4a61-ab89-5a029309d09c ==============================
+[0m05:19:51.814366 [info ] [MainThread]: Running with dbt=1.9.4
+[0m05:19:51.814898 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/leali/.dbt', 'log_path': '/Users/leali/sjsu-data226-SP25/week10/build_mau_1/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:19:52.991741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ceb3d719-215b-4a61-ab89-5a029309d09c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11561d430>]}
+[0m05:19:53.033998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ceb3d719-215b-4a61-ab89-5a029309d09c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fd43cb0>]}
+[0m05:19:53.034860 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m05:19:53.139173 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m05:19:53.139895 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:19:53.140206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ceb3d719-215b-4a61-ab89-5a029309d09c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f7b2000>]}
+[0m05:19:53.919843 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.build_mau_1.user_session_channel' (models/input/user_session_channel.sql) depends on a source named 'dev.user_session_channel' which was not found
+[0m05:19:53.923403 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.1700525, "process_in_blocks": "0", "process_kernel_time": 0.557248, "process_mem_max_rss": "193069056", "process_out_blocks": "0", "process_user_time": 4.162904}
+[0m05:19:53.923898 [debug] [MainThread]: Command `dbt run` failed at 05:19:53.923813 after 2.17 seconds
+[0m05:19:53.924198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151ae000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14603b380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x146495fd0>]}
+[0m05:19:53.924480 [debug] [MainThread]: Flushing usage events
+[0m05:19:54.404852 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:21:09.692077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105159280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056ce780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056e61e0>]}
+
+
+============================== 05:21:09.696148 | 03d36b3b-7c04-44f0-b86d-c5397ad7a352 ==============================
+[0m05:21:09.696148 [info ] [MainThread]: Running with dbt=1.9.4
+[0m05:21:09.696641 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/leali/.dbt', 'log_path': '/Users/leali/sjsu-data226-SP25/week10/build_mau_1/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m05:21:10.776659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03d36b3b-7c04-44f0-b86d-c5397ad7a352', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12caf53d0>]}
+[0m05:21:10.817331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03d36b3b-7c04-44f0-b86d-c5397ad7a352', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12effde50>]}
+[0m05:21:10.818165 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m05:21:10.918174 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m05:21:10.918843 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m05:21:10.919146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '03d36b3b-7c04-44f0-b86d-c5397ad7a352', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f8c43e0>]}
+[0m05:21:11.698628 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.build_mau_1.user_session_channel' (models/input/user_session_channel.sql) depends on a source named 'dev.user_session_channel' which was not found
+[0m05:21:11.702350 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.0633433, "process_in_blocks": "0", "process_kernel_time": 0.73347, "process_mem_max_rss": "192528384", "process_out_blocks": "0", "process_user_time": 4.019165}
+[0m05:21:11.702841 [debug] [MainThread]: Command `dbt run` failed at 05:21:11.702751 after 2.06 seconds
+[0m05:21:11.703142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105159280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103261640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b48e7e0>]}
+[0m05:21:11.703420 [debug] [MainThread]: Flushing usage events
+[0m05:21:12.088272 [debug] [MainThread]: An error was encountered while trying to flush usage events
